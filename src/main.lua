@@ -1,27 +1,22 @@
 require("globals")
-local SceneManager = require("components.SceneManager")
-
-local loadingScenePath = "scenes.Loading"
-local menuScenePath = "scenes.Menu"
-
-
-local sceneManager = SceneManager:new()
+local GameManager = require("components.GameManager")
+local gameManager = GameManager:new()
 
 function love.load()
-    sceneManager:load(loadingScenePath)
-
     -- temp for testing
     if checkIsMobileDevice() then
         _LW.setMode( windowH, windowH, {borderless = true} )
     end
+
+    gameManager:load()
 end
 
 function love.draw()
-    sceneManager:draw()
+    gameManager:draw()
 
     printHelpers()
 end
 
 function love.update(dt)
-    sceneManager:update(dt)
+    gameManager:update(dt)
 end
