@@ -11,7 +11,7 @@ end
 function love.draw()
     gameManager:draw()
 
-    _LG.setColor(unpack(colors.white))
+    _LG.setColor(unpack(colors.default.white))
     _LG.setFont(fonts.default)
     printHelpers()
 end

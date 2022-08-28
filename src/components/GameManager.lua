@@ -23,11 +23,11 @@ end
 function GameManager.update(self, dt)
     self.sceneManager:update(dt)
 
-    if self.sceneManager.scene.id == "loading" then
-        if not self.sceneManager.scene.isLoading then
-            self.sceneManager:load(menuScenePath)
-        end
-    end
+    --if self.sceneManager.scene.id == "loading" then
+    --    if not self.sceneManager.scene.isLoading then
+    --        self.sceneManager:load(menuScenePath)
+    --    end
+    --end
 end
 
 return GameManager

@@ -9,7 +9,16 @@ function Menu.new(self)
 end
 
 function Menu.draw(self)
-    _LG.print("Menu screen")
+    local font = fonts.evilEmpire50
+    _LG.setFont(font)
+    _LG.setColor(unpack(colors.menu.text))
+    _LG.setBackgroundColor(unpack(colors.menu.background))
+
+    -- Draw text
+    local text = "Menu"
+    local textWidth = font:getWidth(text)
+    _LG.print(text, windowW / 2 - textWidth / 2, 200)
+
 end
 
 function Menu.update(self, dt)
