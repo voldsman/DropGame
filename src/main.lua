@@ -3,10 +3,7 @@ local GameManager = require("components.GameManager")
 local gameManager = GameManager:new()
 
 function love.load()
-    -- temp for testing
-    if checkIsMobileDevice() then
-        _LW.setMode( windowH, windowH, {borderless = true} )
-    end
+    checkIsMobileDevice()
 
     gameManager:load()
 end

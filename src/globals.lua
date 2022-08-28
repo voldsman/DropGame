@@ -6,7 +6,9 @@ windowW = _LG:getWidth()
 windowH = _LG:getHeight()
 
 function checkIsMobileDevice()
-    return love.system.getOS() == 'iOS' or love.system.getOS() == 'Android'
+    if love.system.getOS() == 'iOS' or love.system.getOS() == 'Android' then
+        _LW.setMode( windowH, windowH, {borderless = true} )
+    end
 end
 
 function printHelpers()
