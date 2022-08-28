@@ -1,0 +1,13 @@
+<component name="ProjectRunConfigurationManager">
+  <configuration default="false" name="DropGame" type="lua.app" factoryName="Lua Application">
+    <module name="DropGameFull" />
+    <option name="program" value="/opt/homebrew/bin/love" />
+    <option name="file" value="." />
+    <option name="workingDir" value="$PROJECT_DIR$/src" />
+    <option name="debuggerType" value="2" />
+    <option name="params" value="" />
+    <option name="charset" value="UTF-8" />
+    <option name="showConsole" value="true" />
+    <method v="2" />
+  </configuration>
+</component>
